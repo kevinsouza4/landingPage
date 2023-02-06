@@ -58,3 +58,14 @@ p {
   padding-bottom:  0;
   
 }
+
+#fundo .texto,
+#secao-a .texto {
+  padding: 0 1.5em;
+}
+
+#secao-a {
+  background: #fff;
+  color: #333;
+  padding-bottom: 2em;
+}
