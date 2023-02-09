@@ -8,6 +8,12 @@ body {
   text-align: center;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3 {
@@ -97,3 +103,68 @@ p {
 }
 
 /* Secao C */
+
+#secao-c {
+  background: #fff;
+  color: #333;
+  padding: 2em;
+}
+
+/* Secao D /caixas */
+
+#secao-d .box{
+  padding: 2em;
+  color: #fff;
+}
+
+#secao-d .box:first-child{
+  background: #2690d4;
+}
+
+/* Footer */
+
+#main-footer {
+  padding: 2em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#main-footer a {
+  color:#2690d4;
+  text-decoration: none;
+}
+@media (min-width: 700px) {
+ .tudo {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+ }
+
+ #secao-a .texto2 {
+  columns: 2;
+  column-gap: 2em;
+ }
+
+ #section-a .texto2 p {
+  padding-top: 0;
+ }
+
+ .texto,
+ #secao-b ul{
+  grid-column: 2/4;
+ }
+
+ .box,
+ #main-footer div{
+  grid-column: span 2;
+ }
+
+ #secao-b ul {
+    display: flex;
+    justify-content: space-around;
+ }
+
+ #secao-b li {
+   width: 31%;
+ }
+}
